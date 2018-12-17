@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystals Collector Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Charm:400,700" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="assets/images/crystals_game.png" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <header>
+                    <h1>Crystals Collector Game!</h1>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <header>
+                    <h2>Instructions</h2>
+                </header>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul>
+                    <li>You will be given a random number at the start of the game</li>
+                    <li>There are four crystal bellow. By clicking on a crystalyou will add a specific amount of points to your total score</li>
+                    <li>You win the game by matching your total score random number, you lose the game if your total score goes abovethe random number</li>
+                    <li>The value of each crystal is hidden from fou until you click on it</li>
+                    <li>Each time when the game starts, the game will change the values of each crystal</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 containerInfo">
+                <label>Magic number:&nbsp;</label><label id="numberGuesses"></label>
+            </div>
+            <div class="col-md-2 containerInfo">
+                <label>Your score:&nbsp;</label><label id="totalScores"></label>
+            </div>
+            <div class="col-md-2 containerInfo">
+                <label>Wins:&nbsp;</label><label id="wins"></label>
+            </div>
+            <div class="col-md-2 containerInfo">
+                <label>Losses:&nbsp;</label><label id="losses"></label>
+            </div>
+        </div>
+        <div class="row">  
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <img src="assets/images/ruby.JPG" alt="Ruby Crystal" class="crystalDiv" id="ruby">
+                <img src="assets/images/aquamarine.JPG" alt="Aquamarine Crystal" class="crystalDiv" id="aquamarine">
+                <img src="assets/images/emerald.JPG" alt="Emerald Crystal" class="crystalDiv"  id="emerald">
+                <img src="assets/images/ambar.JPG" alt="Amber Crystal" class="crystalDiv" id="ambar">
+            </div>
+        </div>  
+        <div class="row">
+            <div class="col-md-12">
+                <button id="reset" type="button">Reset</button>
+            </div>
+        </div>        
+    </section>
+    <!-- Sticky footer -->
+    <footer class="footer">
+        <div class="space"></div>
+        <div class="container">
+            <p>Copyright ©</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
+    <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
